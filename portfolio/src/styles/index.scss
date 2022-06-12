@@ -1,0 +1,17 @@
+@import "../styles/variables.scss";
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body {
+    font-family: $primaryFont;
+    width:100%;
+    color: $secondary;
+}
+
+
+#root {
+    height: 100%;
+}

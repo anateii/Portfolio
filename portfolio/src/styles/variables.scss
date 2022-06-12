@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+
+//Colors
+
+$primary-light: #00FFDE;
+$primary-dark: #2BA595;
+$secondary: #242A38;
+$dark-grey: #4E596F;
+$white: #fff;
+
+//Fonts
+
+$primaryFont: 'Manrope', sans-serif;
+$secondaryFont: 'League Spartan', sans-serif;
+
+
+//spacing
+
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//Breakpoints
+
+@mixin breakpoint($point) {
+    @if $point == md { 
+        @media (min-width: 48em) {
+            @content
+        }}
+       
+    
+}

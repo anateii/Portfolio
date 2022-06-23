@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-
 import classes from "./Header.module.scss";
 import { Link, useNavigate } from "react-router-dom";
+
+
+
+
 
 export const Header = () => {
     const history = useNavigate();
@@ -44,7 +47,7 @@ export const Header = () => {
         <header className={classes.header}>
             <div className={classes.header__content}>
                 <Link to="/" className={classes.header__content__logo}>
-                   <img src="./assets/logo.png" alt=""/>
+                   <img src="/assets/logo.png" alt=""/>
                 </Link>
                 <nav
                     className={`${classes.header__content__nav} ${

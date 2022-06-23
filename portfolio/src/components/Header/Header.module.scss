@@ -23,13 +23,7 @@
         z-index: 100;
 
         &__logo {
-            font-size: 2rem;
-            font-weight: bold;
-            text-decoration: none;
-            color: $white;
-            background: -webkit-linear-gradient(left, $primary-dark, $primary-light);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+           /*  transform: translateY(0.5em) */
         }
 
         &__nav {

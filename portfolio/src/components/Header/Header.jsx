@@ -8,8 +8,8 @@ export const Header = () => {
     
     <header className={classes.header}>
     <div className={classes.header__content}>
-      <h2>logo</h2>
-      </div>
+      <h2 className={classes.header__content__logo}>logo</h2>
+     
       <nav className={classes.header__content__nav}>
       <ul>
         <li>Who</li>
@@ -17,7 +17,10 @@ export const Header = () => {
         <li>Work</li>
       </ul>
       </nav>
-      <div className={classes.header__content__toggle}></div>
+      <div className={classes.header__content__toggle}>
+        <BiMenuAltRight/>
+      </div> 
+      </div>
       </header>
     
   )

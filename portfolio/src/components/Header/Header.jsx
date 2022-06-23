@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -45,7 +44,7 @@ export const Header = () => {
         <header className={classes.header}>
             <div className={classes.header__content}>
                 <Link to="/" className={classes.header__content__logo}>
-                    navbar
+                   <img src="./assets/logo.png" alt=""/>
                 </Link>
                 <nav
                     className={`${classes.header__content__nav} ${
@@ -69,7 +68,7 @@ export const Header = () => {
                             </Link>
                         </li>
                     </ul>
-                    <button onClick={ctaClickHandler}>CTA Page</button>
+                    <button onClick={ctaClickHandler}>Download Resume</button>
                 </nav>
                 <div className={classes.header__content__toggle}>
                     {!menuOpen ? (

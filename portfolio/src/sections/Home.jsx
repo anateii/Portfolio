@@ -4,8 +4,8 @@ import classes from './Home.module.scss'
 
 export const Home = () => {
   return (
-    <div>
-        <h1>Ana Matei</h1>
+    <div className={classes.title}>
+        <h1>ANA MATEI</h1>
     </div>
   )
 }

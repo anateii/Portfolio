@@ -1,2 +1,13 @@
 @import "./src/styles/variables.scss";
 
+.title {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 5vw;
+    font-family: $primaryFont;
+    font-weight: 800;
+
+    
+}

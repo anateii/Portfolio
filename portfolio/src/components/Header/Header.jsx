@@ -46,8 +46,8 @@ export const Header = () => {
     return (
         <header className={classes.header}>
             <div className={classes.header__content}>
-                <Link to="/home" className={classes.header__content__logo}>
-                   <img src="/assets/logo.png" alt=""/>
+                <Link to="/home" >
+                   <img src="/assets/logo.png" alt="" className={classes.header__content__logo}/>
                 </Link>
                 <nav
                     className={`${classes.header__content__nav} ${

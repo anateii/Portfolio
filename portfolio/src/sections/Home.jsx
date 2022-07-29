@@ -22,12 +22,14 @@ export const Home = () => {
         } 
       */ options={{
           strings: [
-            "React Nerd",
+            "React Developer",
             "Sales Funnel Designer",
             "IG Content Creator",
           ],
           autoStart: true,
           loop: true,
+          deleteSpeed: "natural",
+          pauseFor: 1500,
         }}
       />
     </>

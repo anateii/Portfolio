@@ -1,13 +1,25 @@
 @import "./src/styles/variables.scss";
 
 .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 3vw;
+  font-family: $primaryFont;
+  font-weight: 800;
+  margin-top: 3rem;
+}
 
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    font-size: 3vw;
-    font-family: $primaryFont;
-    font-weight: 800;
-    margin-top: 3rem;
-    
+div:nth-of-type(2) {
+  font-family: $secondaryFont;
+  font-size: 4vw;
+  background: -webkit-linear-gradient($primary-dark, $primary-light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  & > span {
+    background: -webkit-linear-gradient($primary-dark, $primary-light);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

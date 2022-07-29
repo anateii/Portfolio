@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: $primaryFont;
   font-weight: 800;
   margin-top: 3rem;
@@ -12,7 +12,8 @@
 
 div:nth-of-type(2) {
   font-family: $secondaryFont;
-  font-size: 4vw;
+  font-size: 5vw;
+  font-weight: 600;
   background: -webkit-linear-gradient($primary-dark, $primary-light);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

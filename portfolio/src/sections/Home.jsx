@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Home.module.scss";
 import Typewriter from "typewriter-effect";
+import { Who } from "./Who";
 
 export const Home = () => {
   return (
@@ -32,6 +33,7 @@ export const Home = () => {
           pauseFor: 1500,
         }}
       />
+      <Who />
     </>
   );
 };

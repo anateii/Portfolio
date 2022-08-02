@@ -1,7 +1,7 @@
 @import "./src/styles/variables.scss";
 
 .header {
-  background: $secondary;
+  background: transparent;
   width: 100%;
   height: $headerHeight;
   padding: 0 1.5rem;
@@ -9,6 +9,11 @@
     padding: 0 3rem;
   }
   transition: 0.3s ease all;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 3px 35px 0px $secondary-dark;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 
   &__content {
     overflow: hidden;
@@ -21,10 +26,6 @@
     justify-content: space-between;
     position: relative;
     z-index: 100;
-
-    &__logo {
-      /*  transform: translateY(0.5em) */
-    }
 
     &__nav {
       top: 0;

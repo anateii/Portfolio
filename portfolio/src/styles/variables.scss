@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap");
 
 //Colors
 
-$primary-light: #00FFDE;
-$primary-dark: #2BA595;
-$secondary: #242A38;
-$dark-grey: #4E596F;
+$primary-light: #00ffde;
+$primary-dark: #2ba595;
+$secondary: #242a38;
+$secondary-dark: #141820;
+$dark-grey: #4e596f;
 $white: #fff;
 
 //Header
@@ -14,12 +14,10 @@ $white: #fff;
 $headerHeight: 100px;
 $borderRadius: 12px;
 
-
 //Fonts
 
-$primaryFont: 'Manrope', sans-serif;
-$secondaryFont: 'League Spartan', sans-serif;
-
+$primaryFont: "Manrope", sans-serif;
+$secondaryFont: "League Spartan", sans-serif;
 
 //spacing
 
@@ -29,10 +27,9 @@ $spacing-lg: 32px;
 //Breakpoints
 
 @mixin breakpoint($point) {
-    @if $point == md { 
-        @media (min-width: 48em) {
-            @content
-        }}
-       
-    
+  @if $point == md {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
 }

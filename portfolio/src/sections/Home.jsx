@@ -32,6 +32,7 @@ export const Home = () => {
           pauseFor: 1500,
         }}
       />
+      <div>Hello</div>
     </div>
   );
 };

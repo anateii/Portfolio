@@ -1,11 +1,10 @@
 import React from "react";
 import classes from "./Home.module.scss";
 import Typewriter from "typewriter-effect";
-import { Who } from "./Who";
 
 export const Home = () => {
   return (
-    <>
+    <div className={classes.titleWrapper}>
       <div className={classes.title}>
         <h1>Hi, I am Ana</h1>
       </div>
@@ -33,7 +32,6 @@ export const Home = () => {
           pauseFor: 1500,
         }}
       />
-      <Who />
-    </>
+    </div>
   );
 };

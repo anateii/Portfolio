@@ -1,39 +1,35 @@
 @import "./src/styles/variables.scss";
 
 .titleWrapper {
-  display: flex;
   height: 80vh;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .title {
-  display: flex;
-  justify-content: start;
-  flex-direction: row;
   font-size: 2vw;
   font-family: $primaryFont;
   font-weight: 800;
   margin-top: 3rem;
   padding: 0 3rem;
-}
+  grid-area: 1 / 1 / 2 / 2;
 
-div:nth-of-type(2) {
-  font-family: $secondaryFont;
-  font-size: 5vw;
-  font-weight: 600;
-  background: -webkit-linear-gradient($primary-dark, $primary-light);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  padding: 0 3rem;
-
-  & > span {
+  & > div {
+    font-family: $secondaryFont;
+    font-size: 5vw;
+    font-weight: 600;
     background: -webkit-linear-gradient($primary-dark, $primary-light);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    & > span {
+      background: -webkit-linear-gradient($primary-dark, $primary-light);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 

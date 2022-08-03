@@ -1,12 +1,15 @@
 @import "./src/styles/variables.scss";
 
 .titleWrapper {
-  height: 80vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  position: absolute;
+  top: 0;
+  width: 80vw;
 }
 
 .title {

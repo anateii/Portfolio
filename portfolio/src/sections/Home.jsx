@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./Home.module.scss";
 import Typewriter from "typewriter-effect";
-import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (

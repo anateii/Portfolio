@@ -12,9 +12,6 @@
   top: 0;
   background: transparent;
 
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
   &__content {
     overflow: hidden;
     color: $white;
@@ -102,8 +99,8 @@
         transition: 0.3s ease all;
 
         &:hover {
-          border-color: $primary-light;
-          background: rgba($primary-light, 0.1);
+          border-color: $primary-dark;
+          background: rgba($secondary, 0.1);
           color: $white;
         }
         &:active {

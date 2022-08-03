@@ -42,13 +42,13 @@ export const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        {/*  <Link to="/">
+        <Link to="/">
           <img
             src="/assets/logo.png"
             alt=""
             className={classes.header__content__logo}
           />
-        </Link> */}
+        </Link>
         <nav
           className={`${classes.header__content__nav} ${
             menuOpen && size.width < 768 ? classes.isMenu : ""

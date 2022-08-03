@@ -22,13 +22,6 @@ export const Home = () => {
               pauseFor: 1500,
             }}
           />
-          <Link to="/">
-            <img
-              src="/assets/logo.png"
-              alt=""
-              className={classes.header__content__logo}
-            />
-          </Link>
         </div>
         <div className={classes.titleWrapper__secondDiv}>Hello</div>{" "}
       </div>

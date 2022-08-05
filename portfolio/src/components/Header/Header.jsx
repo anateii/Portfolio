@@ -77,7 +77,7 @@ export const Header = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button onClick={ctaClickHandler}>Download Resume</button>
+            <button onClick={ctaClickHandler}>Resume</button>
           </a>
         </nav>
         <div className={classes.header__content__toggle}>

@@ -24,6 +24,10 @@
     position: relative;
     z-index: 100;
 
+    &__logo {
+      width: fit-content;
+    }
+
     &__nav {
       top: 0;
       right: 100%;

@@ -22,7 +22,7 @@ export const Home = () => {
             }}
           />
         </div>
-        <div className={classes.titleWrapper__secondDiv}>Hello</div>{" "}
+        <div className={classes.titleWrapper__secondDiv}></div>{" "}
       </div>
     </>
   );

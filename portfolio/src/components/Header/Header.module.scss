@@ -81,7 +81,8 @@
             transition: 0.3s ease all;
 
             &:hover {
-              background: rgba($dark-grey, 0.1);
+              background: rgba($primary-dark, 0.1);
+              color: $primary-dark;
             }
             &:active {
               border-radius: calc(#{$borderRadius} + 6px);
@@ -104,7 +105,7 @@
 
         &:hover {
           border-color: $primary-dark;
-          background: rgba($secondary, 0.1);
+          background: rgba($primary-light, 0.1);
           color: $white;
         }
         &:active {

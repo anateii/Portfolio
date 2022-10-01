@@ -11,23 +11,23 @@
   top: 0;
   width: 80vw;
   z-index: -1;
-  @media (max-width: 456px){
+  @media (max-width: 456px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    width:100vw;
-    height:100vh;
+    width: 100vw;
+    height: 100vh;
   }
 
   &__secondDiv {
     position: absolute;
     top: 50vh;
     left: 70vw;
-    @media (max-width:456px) {
-      display:none;
-    };
+    @media (max-width: 456px) {
+      display: none;
+    }
   }
 }
 
@@ -63,6 +63,12 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+  }
+
+  & .subtitle > p {
+    font-size: 1.5vw;
+    font-weight: 400;
+    -webkit-text-fill-color: white;
   }
 }
 

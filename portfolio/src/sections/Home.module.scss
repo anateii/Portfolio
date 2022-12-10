@@ -44,9 +44,12 @@
   & > h1 {
     position: absolute;
     top: 50%;
+    @media (max-width: 456px) {
+      font-size: 24px;
+    }
   }
 
-  & > div {
+  & > div:nth-of-type(1) {
     font-family: $secondaryFont;
     font-size: 4vw;
     font-weight: 600;
@@ -55,20 +58,23 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: absolute;
-    top: 56%;
-
-    & > span {
-      background: -webkit-linear-gradient($primary-dark, $primary-light);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    top: 75%;
+    @media (max-width: 456px) {
+      font-size: 4vh;
+      top: 90%;
     }
   }
+}
 
-  & .subtitle > p {
-    font-size: 1.5vw;
-    font-weight: 400;
-    -webkit-text-fill-color: white;
+.subtitle > p {
+  font-size: 1.5vw;
+  font-weight: 400;
+  -webkit-text-fill-color: white;
+  position: absolute;
+  top: 56%;
+  @media (max-width: 456px) {
+    font-size: 4vw;
+    top: 60%;
   }
 }
 

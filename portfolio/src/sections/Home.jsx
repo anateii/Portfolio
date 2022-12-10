@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 export const Home = () => {
   return (
     <>
-      {/**  <div className={classes.titleWrapper}>
+      <div className={classes.titleWrapper}>
         <div className={classes.title}>
           <h1>Hi, I am Ana</h1>
           <Typewriter
@@ -13,7 +13,7 @@ export const Home = () => {
               strings: [
                 "React Developer",
                 "Sales Funnel Designer",
-                "IG Content Creator",
+                "Content Creator",
               ],
               autoStart: true,
               loop: true,
@@ -31,7 +31,7 @@ export const Home = () => {
         </div>
 
         <div className={classes.titleWrapper__secondDiv}></div>{" "}
-      </div>*/}
+      </div>
     </>
   );
 };

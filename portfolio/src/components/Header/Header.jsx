@@ -42,31 +42,24 @@ export const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        <Link to="/">
-          <img
-            src="/assets/logo2.svg"
-            alt=""
-            className={classes.header__content__logo}
-          />
-        </Link>
+        <div></div>
         <nav
-          className={`${classes.header__content__nav} ${
-            menuOpen && size.width < 768 ? classes.isMenu : ""
-          }`}
+          className={`${classes.header__content__nav} ${menuOpen && size.width < 768 ? classes.isMenu : ""
+            }`}
         >
           <ul>
             <li>
-              <Link to="/section-who" onClick={menuToggleHandler}>
+              <Link to="/who" onClick={menuToggleHandler}>
                 Who
               </Link>
             </li>
             <li>
-              <Link to="/section-what" onClick={menuToggleHandler}>
+              <Link to="/what" onClick={menuToggleHandler}>
                 What
               </Link>
             </li>
             <li>
-              <Link to="/section-work" onClick={menuToggleHandler}>
+              <Link to="/work" onClick={menuToggleHandler}>
                 Work
               </Link>
             </li>

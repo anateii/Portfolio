@@ -11,9 +11,9 @@ function App() {
       <Header />
       <Home />
       <Routes>
-        <Route path="/section-who" element={<Who />} />
-        <Route path="/section-what" element={<What />} />
-        <Route path="/section-work" element={<Work />} />
+        <Route path="/who" element={<Who />} />
+        <Route path="/what" element={<What />} />
+        <Route path="/work" element={<Work />} />
       </Routes>
     </Router>
   );

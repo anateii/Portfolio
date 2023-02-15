@@ -11,10 +11,11 @@
   position: sticky;
   top: 0;
   background: transparent;
+  font-family: $secondaryFont;
 
   &__content {
     overflow: hidden;
-    color: $white;
+    color: $light-navy;
     margin: 0 auto;
     max-width: 1920px;
     height: 100%;
@@ -40,7 +41,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: rgba($secondary, 0.9);
+      background: rgba($primary-dark, 0.9);
       backdrop-filter: blur(2px);
       transform: translate(0);
       transition: 0.3s ease transform;
@@ -59,6 +60,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: $spacing-lg;
+        font-family: $secondaryFont;
         @include breakpoint(md) {
           flex-direction: row;
           align-items: center;
@@ -75,18 +77,16 @@
           }
           a {
             text-decoration: none;
-            color: inherit;
+            color: rgba($light-navy, 0.8);
             padding: 0.75rem 1.25rem;
             border-radius: $borderRadius;
             transition: 0.3s ease all;
 
             &:hover {
-              background: rgba($primary-dark, 0.1);
-              color: $primary-dark;
+              color: $secondary;
             }
-            &:active {
-              border-radius: calc(#{$borderRadius} + 6px);
-              background: linear-gradient(rgba($white, 0.1), rgba($white, 0.2));
+            & span {
+              color: $secondary;
             }
           }
         }
@@ -99,14 +99,14 @@
         font-size: 1rem;
         font-family: inherit;
         background: $primary-dark;
-        color: $white;
-        border: 1px solid transparent;
+        color: $light-navy;
+        border: 1px solid $secondary;
         transition: 0.3s ease all;
 
         &:hover {
-          border-color: $primary-dark;
-          background: rgba($primary-light, 0.1);
-          color: $white;
+          border-color: $secondary;
+          background: rgba($secondary, 0.2);
+          color: $light-navy;
         }
         &:active {
           border-color: $primary-dark;
@@ -114,7 +114,7 @@
             rgba($primary-dark, 0.2),
             rgba($primary-light, 0.3)
           );
-          color: $white;
+          color: $light-navy;
         }
       }
 
@@ -130,9 +130,10 @@
       font-size: 2rem;
       transition: 0.3s ease all;
       position: relative;
+      color: $secondary;
 
       &:hover {
-        color: $white;
+        color: $light-navy;
       }
 
       @include breakpoint(md) {

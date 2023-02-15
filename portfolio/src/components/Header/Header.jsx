@@ -50,22 +50,25 @@ export const Header = () => {
           <ul>
             <li>
               <Link to="/who" onClick={menuToggleHandler}>
+                <span>01. </span>
                 Who
               </Link>
             </li>
             <li>
               <Link to="/what" onClick={menuToggleHandler}>
+                <span>02. </span>
                 What
               </Link>
             </li>
             <li>
               <Link to="/work" onClick={menuToggleHandler}>
+                <span>03. </span>
                 Work
               </Link>
             </li>
           </ul>
           <a
-            href="/assets/CV - 2022.pdf"
+            href="/assets/Ana Matei - CV.pdf"
             download="CV"
             target="_blank"
             rel="noreferrer"

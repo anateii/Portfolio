@@ -8,7 +8,7 @@
 body {
   font-family: $primaryFont;
   width: 100%;
-  color: $white;
+  color: $light-navy;
   height: 100vh;
 }
 
@@ -22,7 +22,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background: $primary-light;
+  background: $primary-dark;
   overflow: hidden;
   z-index: -1;
 }

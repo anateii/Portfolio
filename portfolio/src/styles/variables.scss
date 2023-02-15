@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&family=Space+Mono&display=swap");
 
 //Colors
 
 //$primary-light: #00ffde;
 //$primary-dark: #2ba595;
-$primary-light: #e8b0af;
-$primary-dark: #9f5b6d;
-$secondary: #091018;
-$secondary-dark: #141820;
+$primary-light: #112240;
+$primary-dark: #6d30d2;
+$secondary: #64ffda;
+$secondary-dark: #26806b;
 $dark-grey: #4e596f;
-$white: #fff;
-
+$light-navy: #e1e9ff;
 //Header
 
 $headerHeight: 100px;
@@ -18,8 +17,8 @@ $borderRadius: 12px;
 
 //Fonts
 
-$primaryFont: "Manrope", sans-serif;
-$secondaryFont: "League Spartan", sans-serif;
+$primaryFont: "Prompt", sans-serif;
+$secondaryFont: "Space Mono", monospace;
 
 //spacing
 

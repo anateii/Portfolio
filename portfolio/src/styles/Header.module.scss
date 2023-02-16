@@ -11,6 +11,7 @@
   position: sticky;
   top: 0;
   background: transparent;
+  backdrop-filter: blur(2px);
   font-family: $secondaryFont;
 
   &__content {
@@ -42,7 +43,6 @@
       align-items: center;
       text-align: center;
       background: rgba($primary-dark, 0.9);
-      backdrop-filter: blur(2px);
       transform: translate(0);
       transition: 0.3s ease transform;
 
@@ -117,6 +117,9 @@
 
       &.isMenu {
         transform: translate(100%);
+      }
+      &.isMenuMobile {
+        transform: none;
       }
     }
 

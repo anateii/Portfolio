@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import classes from "../styles/Header.module.scss";
-import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link"
 
 export const Header = () => {
-  const history = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
     width: 300,
@@ -41,8 +40,15 @@ export const Header = () => {
   return (
     <>
       <header className={classes.header}>
+        <hr />
         <div className={classes.header__content}>
-          <div></div>
+
+          <div className={classes.header__content__logo}>
+            <FaGithub onClick={() => window.open('https://github.com/anateii', '_blank')} />
+            < FaLinkedinIn onClick={() => window.open('https://www.linkedin.com/in/ana-matei/', '_blank')} />
+            < FaInstagram onClick={() => window.open('https://www.instagram.com/hercodingpill/', '_blank')} />
+          </div>
+
           <nav
             className={`${classes.header__content__nav} ${menuOpen && size.width < 1024 ? classes.isMenu : classes.isMenuMobile
               }`}

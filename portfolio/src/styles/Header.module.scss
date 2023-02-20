@@ -13,6 +13,13 @@
   background: transparent;
   backdrop-filter: blur(2px);
   font-family: $secondaryFont;
+  font-size: 14px;
+
+  & hr {
+    transform: translate(-3rem, 3.15rem);
+    width: 4rem;
+    color: $light-navy;
+  }
 
   &__content {
     overflow: hidden;
@@ -27,7 +34,25 @@
     z-index: 100;
 
     &__logo {
-      width: 5vw;
+      width: 12em;
+      color: $light-navy;
+      font-size: 1.4em;
+      padding: 0 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      & svg:hover {
+        color: $secondary;
+        cursor: pointer;
+        transform: translateY(5px);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+      }
     }
 
     &__nav {
@@ -97,21 +122,21 @@
         padding: 0.75rem 1.25rem;
         margin: 0;
         border-radius: $borderRadius;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-family: inherit;
         background: $primary-dark;
-        color: $light-navy;
+        color: $secondary;
         border: 1px solid $secondary;
         transition: 0.5s ease all;
 
         &:hover {
           border-color: $secondary;
           background: rgba($secondary, 0.2);
-          color: $light-navy;
+          color: $secondary;
         }
         &:active {
           border-color: $primary-dark;
-          color: $light-navy;
+          color: $secondary;
         }
       }
 

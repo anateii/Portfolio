@@ -2,12 +2,10 @@
 
 .about {
   padding: 0em 6em;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 
   @media (max-width: 456px) {
     padding: 0em 2em;
+    margin-top: -60px;
   }
 
   &__title {

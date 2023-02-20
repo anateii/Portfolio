@@ -35,10 +35,8 @@ export const Header = () => {
     setMenuOpen((p) => !p);
   };
 
-  const ctaClickHandler = () => {
-    menuToggleHandler();
-    history.push("/page-cta");
-  };
+
+
 
   return (
     <>
@@ -51,22 +49,33 @@ export const Header = () => {
           >
             <ul>
               <li>
-                <HashLink to="/#who" smooth onClick={menuToggleHandler}>
+                {menuOpen && size.width < 768 ? (<HashLink to="/#who" smooth onClick={menuToggleHandler}>
                   <span>01. </span>
                   Who
-                </HashLink>
+                </HashLink>) : (<HashLink to="/#who" smooth>
+                  <span>01. </span>
+                  Who
+                </HashLink>)}
+
               </li>
               <li>
-                <HashLink to="/#what" smooth onClick={menuToggleHandler}>
+                {menuOpen && size.width < 768 ? (<HashLink to="/#what" smooth onClick={menuToggleHandler}>
                   <span>02. </span>
                   What
-                </HashLink>
+                </HashLink>) : (<HashLink to="/#what" smooth>
+                  <span>02. </span>
+                  What
+                </HashLink>)}
+
               </li>
               <li>
-                <HashLink to="/#work" smooth onClick={menuToggleHandler}>
+                {menuOpen && size.width < 768 ? (<HashLink to="/#work" smooth onClick={menuToggleHandler}>
                   <span>03. </span>
                   Work
-                </HashLink>
+                </HashLink>) : (<HashLink to="/#work" smooth>
+                  <span>03. </span>
+                  Work
+                </HashLink>)}
               </li>
             </ul>
             <a
@@ -75,7 +84,7 @@ export const Header = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button onClick={ctaClickHandler}>Resume</button>
+              <button>Resume</button>
             </a>
           </nav>
           <div className={classes.header__content__toggle}>

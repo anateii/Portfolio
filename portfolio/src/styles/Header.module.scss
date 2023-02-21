@@ -18,7 +18,7 @@
   & hr {
     transform: translate(-3rem, 3.15rem);
     width: 4rem;
-    color: $light-navy;
+    color: rgba($light-navy, 0.8);
   }
 
   &__content {
@@ -124,7 +124,7 @@
         border-radius: $borderRadius;
         font-size: 0.9rem;
         font-family: inherit;
-        background: $primary-dark;
+        background: $primary-light;
         color: $secondary;
         border: 1px solid $secondary;
         transition: 0.5s ease all;

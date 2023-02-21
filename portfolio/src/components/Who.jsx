@@ -4,13 +4,13 @@ import classes from '../styles/Who.module.scss'
 export const Who = () => {
   return (
     <>
-      <div className={classes.about}>
+      <div id="who" className={classes.about}>
         <h2 className={classes.title}> About me</h2>
-        <div id="who" className={classes.container}>
+        <div className={classes.container}>
           <div>
             <p>Hello! My name is Ana and I enjoy creating things that live on the internet.
               My interest in web development started back in 2020 when I decided to dive deep into Digital Marketing, more specifically
-              into creating <bold style={{ fontWeight: '800', color: '#64ffda' }}> sales funnels</bold> for Italian Business Coaches.
+              into creating <span style={{ fontWeight: '400', color: '#64ffda' }}>sales funnels</span> for Italian Business Coaches.
               Turns out using tools like Clickfunnels and GoHighLevel taught me a lot about HTML & CSS!
             </p>
             <p>Fast-forward to today, and I’ve had the privilege of working as a Sales Funnel Designer, Appointment Setter, Copywriter, and finally

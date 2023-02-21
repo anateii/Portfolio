@@ -11,7 +11,7 @@
   padding: 0em 2em;
 
   @media (max-width: 456px) {
-    padding: 0em 2em;
+    padding: 0em 1em;
     margin-top: -60px;
   }
 
@@ -27,22 +27,11 @@
     font-family: $secondaryFont;
     color: $secondary;
   }
-
-  @media (min-width: 768px) {
-    &::after {
-      content: "";
-      display: block;
-      position: relative;
-      width: 12vw;
-      height: 1px;
-      background-color: rgba($light-navy, 0.3);
-      transform: translate(7.5em, -0.8em);
-    }
-  }
 }
 
 .container {
-  background-color: $primary-dark;
+  background-color: $primary-light;
+  color: $light-navy;
   width: 100%;
   height: 100%;
   padding: 0 15vw;
@@ -51,10 +40,18 @@
 
   @media (max-width: 475px) {
     display: block;
+    padding: 0 5vw;
   }
 
   & p {
     font-size: 16px;
+    color: rgba($light-navy, 0.6);
+    font-family: $thirdFont;
+    line-height: 1.5;
+
+    @media (max-width: 475px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -67,6 +64,7 @@
   overflow: hidden;
   list-style: none;
   font-family: $secondaryFont;
+  color: rgba($light-navy, 0.6);
   font-size: 14px;
 
   & li {

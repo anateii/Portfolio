@@ -23,10 +23,7 @@ export const Who = () => {
               <li>ReactJS</li>
               <li>Redux</li>
               <li>Git & GitHub</li>
-
-
               <li>Figma</li>
-
             </ul>
           </div>
           <div className={classes.imgWrapper}>

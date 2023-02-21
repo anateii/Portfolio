@@ -1,12 +1,19 @@
 import React from "react";
 import classes from '../styles/Who.module.scss'
 
+
 export const Who = () => {
+
+  const myStyle = {
+    backgroundImage: 'url(/assets/myPicture.png)',
+    backgroundSize: '300px',
+  }
+
   return (
     <>
       <div id="who">
         <div className={classes.container}>
-          <h2 className={classes.container__title}> About me</h2>
+          <h2 className={classes.container__title}>About me</h2>
           <div className={classes.container__about}>
             <div className={classes.container__about__intro}>
               <p>Hello! My name is Ana and I enjoy creating things that live on the internet.
@@ -29,7 +36,8 @@ export const Who = () => {
               </ul>
             </div>
             <div className={classes.container__about__imgWrapper}>
-              <div className={classes.firstBox} style={{ backgroundImage: "url(/assets/myPicture.png)", backgroundSize: "300px", }}></div>
+              <div className={classes.firstBox}
+                style={myStyle}></div>
               <div className={classes.secondBox}></div>
             </div>
 

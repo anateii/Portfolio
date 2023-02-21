@@ -44,9 +44,9 @@ export const Header = () => {
         <div className={classes.header__content}>
 
           <div className={classes.header__content__logo}>
-            <FaGithub onClick={() => window.open('https://github.com/anateii', '_blank')} />
-            < FaLinkedinIn onClick={() => window.open('https://www.linkedin.com/in/ana-matei/', '_blank')} />
-            < FaInstagram onClick={() => window.open('https://www.instagram.com/hercodingpill/', '_blank')} />
+            <FaGithub onClick={() => window.open('https://github.com/anateii', '_blank')} className={classes.logo1} />
+            < FaLinkedinIn onClick={() => window.open('https://www.linkedin.com/in/ana-matei/', '_blank')} className={classes.logo2} />
+            < FaInstagram onClick={() => window.open('https://www.instagram.com/hercodingpill/', '_blank')} className={classes.logo3} />
           </div>
 
           <nav

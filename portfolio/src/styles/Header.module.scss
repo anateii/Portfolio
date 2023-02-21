@@ -43,7 +43,7 @@
       justify-content: space-between;
 
       & svg:hover {
-        color: $secondary;
+        color: #530291;
         cursor: pointer;
         transform: translateY(5px);
         -webkit-transition-duration: 0.3s;
@@ -67,7 +67,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: rgba($primary-light, 0.9);
+      background: rgba(#000, 0.9);
       transform: translate(0);
       transition: 0.3s ease transform;
 
@@ -102,16 +102,16 @@
           }
           a {
             text-decoration: none;
-            color: rgba($light-navy, 0.8);
+            color: rgba(#fff, 0.8);
             padding: 0.75rem 1.25rem;
             border-radius: $borderRadius;
             transition: 0.3s ease all;
 
             &:hover {
-              color: $secondary;
+              color: #530291;
             }
             & span {
-              color: $secondary;
+              color: #fff;
             }
           }
         }
@@ -121,22 +121,22 @@
         outline: none;
         padding: 0.75rem 1.25rem;
         margin: 0;
+        background-color: #530291;
+        border: 1px solid #530291;
         border-radius: $borderRadius;
+        color: #ffffff;
         font-size: 0.9rem;
         font-family: inherit;
-        background: $primary-light;
-        color: $secondary;
-        border: 1px solid $secondary;
         transition: 0.5s ease all;
 
         &:hover {
-          border-color: $secondary;
-          background: rgba($secondary, 0.2);
-          color: $secondary;
+          background-color: #fff;
+          color: #530291;
         }
         &:active {
-          border-color: $primary-dark;
-          color: $secondary;
+          border-color: #530291;
+          background-color: transparent;
+          color: #fff;
         }
       }
 
@@ -155,10 +155,10 @@
       font-size: 2rem;
       transition: 0.3s ease all;
       position: relative;
-      color: $secondary;
+      color: #fff;
 
       &:hover {
-        color: $light-navy;
+        color: #530291;
       }
 
       @include breakpoint(md) {

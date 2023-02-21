@@ -15,21 +15,27 @@
 }
 
 h3 {
-  color: $secondary;
+  color: #7519c1;
   font-family: $secondaryFont;
   font-size: 16px;
 }
 
-h2 {
+.name {
   font-size: 5vw;
+  background: linear-gradient(to right, #fff 5%, #530291 30%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   @media (max-width: 475px) {
     font-size: 9vw;
   }
 }
+
 h1 {
   font-size: 5vw;
-  color: rgba($light-navy, 0.8);
+  color: #fff;
   line-height: 0.8;
+
   @media (max-width: 475px) {
     font-size: 9vw;
   }
@@ -55,22 +61,23 @@ p {
 button {
   width: 130px;
   height: 50px;
-  background-color: $primary-light;
-  border: 1px solid $secondary;
+  background-color: #530291;
+  border: 1px solid #530291;
   border-radius: $borderRadius;
-  color: $secondary;
+  color: #ffffff;
   margin-top: 2em;
   transition: 0.5s ease all;
   font-size: 1rem;
   cursor: pointer;
 
   &:hover {
-    background-color: rgba($secondary, 0.2);
+    background-color: #fff;
+    color: #530291;
   }
 
   &:active {
-    border-color: $primary-dark;
-    color: $light-navy;
+    border-color: #530291;
+    color: #000;
   }
 }
 

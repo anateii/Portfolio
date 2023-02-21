@@ -10,6 +10,7 @@ body {
   width: 100%;
   color: $light-navy;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 #root {
@@ -22,7 +23,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background: $primary-light;
+  background: #000;
   overflow: hidden;
   z-index: -1;
 }

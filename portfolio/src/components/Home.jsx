@@ -8,7 +8,7 @@ export const Home = () => {
     <>
       <div className={classes.container}>
         <h3>Hi, my name is </h3>
-        <h2>Ana Matei.</h2>
+        <h2 className={classes.name}>Ana Matei.</h2>
         <h1>I create great web experiences.</h1>
         <p>I’m a FrontEnd Developer specialized in building and designing
           exceptional digital experiences with modern JS libraries like ReactJS.</p>

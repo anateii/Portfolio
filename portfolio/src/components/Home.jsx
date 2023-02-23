@@ -1,7 +1,9 @@
 import React from "react";
 import classes from '../styles/Home.module.scss'
 
+
 export const Home = () => {
+
 
 
   return (

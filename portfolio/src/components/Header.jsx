@@ -57,30 +57,30 @@ export const Header = () => {
               <li>
                 {menuOpen && size.width < 768 ? (<HashLink to="/#who" smooth onClick={menuToggleHandler}>
                   <span>01. </span>
-                  Who
+                  WHO
                 </HashLink>) : (<HashLink to="/#who" smooth>
                   <span>01. </span>
-                  Who
+                  WHO
                 </HashLink>)}
 
               </li>
               <li>
                 {menuOpen && size.width < 768 ? (<HashLink to="/#what" smooth onClick={menuToggleHandler}>
                   <span>02. </span>
-                  What
+                  WHAT
                 </HashLink>) : (<HashLink to="/#what" smooth>
                   <span>02. </span>
-                  What
+                  WHAT
                 </HashLink>)}
 
               </li>
               <li>
                 {menuOpen && size.width < 768 ? (<HashLink to="/#work" smooth onClick={menuToggleHandler}>
                   <span>03. </span>
-                  Work
+                  WORK
                 </HashLink>) : (<HashLink to="/#work" smooth>
                   <span>03. </span>
-                  Work
+                  WORK
                 </HashLink>)}
               </li>
             </ul>
@@ -90,7 +90,7 @@ export const Header = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button>Resume</button>
+              <button>RESUME</button>
             </a>
           </nav>
           <div className={classes.header__content__toggle}>

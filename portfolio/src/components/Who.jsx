@@ -27,7 +27,7 @@ export const Who = () => {
                 My main focus is building accessible, inclusive products and digital experiences through the combination of the technologies I used for the past year:
               </p>
               <ul className={classes.skillsList}>
-                <li>JavaScript(ES6+)</li>
+                <li>JavaScript (ES6+)</li>
                 <li>Material UI</li>
                 <li>ReactJS</li>
                 <li>Redux</li>

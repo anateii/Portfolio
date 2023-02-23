@@ -11,20 +11,23 @@
   flex-wrap: wrap;
   background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(113, 9, 165) 120%);
 
-  @media (max-width: 456px) {
+  @media (max-width: 810px) {
     padding: 0 5vw;
     padding-bottom: 0;
   }
 
   &__title {
     font-size: 3rem;
-    background: linear-gradient(to right, #e16060 5%, #7109a5 30%);
+    background: linear-gradient(to right, #b4007e 5%, #540292 30%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     @media (max-width: 456px) {
       font-size: 18px;
+    }
+    @media (min-width: 456px) and (max-width: 810px) {
+      font-size: 24px;
     }
 
     &::before {
@@ -53,10 +56,10 @@
     &__intro p {
       font-size: 16px;
       color: rgba($light-navy, 0.6);
-      font-family: $thirdFont;
+      font-family: $primaryFont;
       line-height: 1.7;
 
-      @media (max-width: 475px) {
+      @media (max-width: 810px) {
         font-size: 14px;
         width: 100%;
       }
@@ -124,7 +127,7 @@
   margin: 20px 0px 0px;
   overflow: hidden;
   list-style: none;
-  font-family: $thirdFont;
+  font-family: $primaryFont;
   color: rgba($light-navy, 0.6);
   font-size: 14px;
 

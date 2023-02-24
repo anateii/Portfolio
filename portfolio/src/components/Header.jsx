@@ -4,6 +4,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import classes from "../styles/Header.module.scss";
 import { HashLink } from "react-router-hash-link"
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,8 +39,29 @@ export const Header = () => {
 
 
 
+  const headerVariants = {
+    visible: { opacity: 1, x: 0, transition: { duration: 1 }, },
+    hidden: { opacity: 0, x: -100 }
+  };
+
+  const controls = useAnimation();
+
+  const [ref, inView] = useInView();
+
+
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+
   return (
-    <>
+    <motion.div ref={ref}
+      animate={controls}
+      variants={headerVariants}
+      initial="hidden" >
       <header className={classes.header}>
         <hr />
         <div className={classes.header__content}>
@@ -102,6 +125,6 @@ export const Header = () => {
           </div>
         </div>
       </header>
-    </>
+    </motion.div>
   );
 };

@@ -24,10 +24,10 @@
     -webkit-text-fill-color: transparent;
 
     @media (max-width: 456px) {
-      font-size: 18px;
+      font-size: 26px;
     }
     @media (min-width: 456px) and (max-width: 810px) {
-      font-size: 24px;
+      font-size: 28px;
     }
 
     &::before {
@@ -144,4 +144,11 @@
       line-height: 18px;
     }
   }
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  margin-top: 53rem;
 }

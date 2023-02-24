@@ -4,19 +4,6 @@
   width: 100%;
   height: $headerHeight;
   padding: 0 1.5rem;
-  animation: 2s header ease-in;
-
-  @keyframes header {
-    0% {
-      width: 0%;
-      opacity: 0;
-    }
-
-    100% {
-      width: 100%;
-      opacity: 1;
-    }
-  }
 
   @include breakpoint(md) {
     padding: 0 3rem;
@@ -135,8 +122,8 @@
         transition: 0.5s ease all;
 
         &:hover {
-          background-color: #ff774a;
-          border-color: #ff774a;
+          background-color: #004dc9;
+          border-color: #004dc9;
           color: #fff;
         }
       }

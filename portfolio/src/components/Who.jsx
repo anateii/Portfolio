@@ -1,8 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from '../styles/Who.module.scss'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
+
+const titleVariants = {
+  visible: { opacity: 1, x: 0, transition: { duration: 1 }, },
+  hidden: { opacity: 0, x: -100 }
+};
+
+const paragraphVariants = {
+  visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 1 }, },
+  hidden: { opacity: 0, x: -100 }
+}
+
+const imgVariants = {
+  visible: { opacity: 1, transition: { duration: 1, delay: 1.5 }, },
+  hidden: { opacity: 0, }
+}
 
 export const Who = () => {
+
+  const controls = useAnimation();
+
+  const [ref, inView] = useInView();
+
+
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   const myStyle = {
     backgroundImage: 'url(/assets/myPicture.png)',
@@ -10,11 +39,24 @@ export const Who = () => {
   }
 
   return (
-    <>
-      <div id="who">
-        <div className={classes.container}>
+
+
+    <div id="who">
+      <div className={classes.container}>
+        <motion.div
+          ref={ref}
+          animate={controls}
+          variants={titleVariants}
+          initial="hidden"
+        >
           <h2 className={classes.container__title}>About me</h2>
-          <div className={classes.container__about}>
+        </motion.div >
+        <div className={classes.container__about}>
+          <motion.div
+            ref={ref}
+            animate={controls}
+            variants={paragraphVariants}
+            initial="hidden">
             <div className={classes.container__about__intro}>
               <p>Hello! My name is Ana and I enjoy creating things that live on the internet.
                 My interest in web development started back in 2020 when I decided to dive deep into
@@ -35,17 +77,26 @@ export const Who = () => {
                 <li>Figma</li>
               </ul>
             </div>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            animate={controls}
+            variants={imgVariants}
+            initial="hidden"
+          >
             <div className={classes.container__about__imgWrapper}>
               <div className={classes.firstBox}
                 style={myStyle}></div>
               <div className={classes.secondBox}></div>
             </div>
+          </motion.div>
 
 
-
-          </div>
 
         </div>
-      </div></>
+
+      </div>
+    </div>
+
   );
 };

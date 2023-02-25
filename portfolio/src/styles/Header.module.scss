@@ -36,7 +36,7 @@
 
     &__logo {
       width: 12em;
-      color: $light-navy;
+      color: #000;
       font-size: 1.4em;
       padding: 0 3rem;
       display: flex;
@@ -92,17 +92,33 @@
           }
           a {
             text-decoration: none;
-            color: rgba(#fff, 0.8);
+            color: rgba(#000, 0.8);
             padding: 0.75rem 1.25rem;
             border-radius: $borderRadius;
             transition: 0.3s ease all;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            line-height: 2;
+
+            @media (max-width: $tabletView) {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              line-height: 2;
+              color: #fff;
+            }
 
             &:hover {
               color: #b4007e;
             }
             & span {
-              color: #fff;
+              color: #000;
               font-family: $primaryFont;
+
+              @media (max-width: $tabletView) {
+                color: #fff;
+              }
             }
           }
         }
@@ -143,10 +159,10 @@
       font-size: 2rem;
       transition: 0.3s ease all;
       position: relative;
-      color: #fff;
+      color: #b4007e;
 
       &:hover {
-        color: #530291;
+        color: #004dc9;
       }
 
       @include breakpoint(md) {

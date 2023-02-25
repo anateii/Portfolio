@@ -19,7 +19,7 @@
     }
   }
 
-  @media (max-width: 475px) {
+  @media (max-width: $mobileView) {
     padding: 10em 1em;
   }
 }
@@ -36,34 +36,34 @@ h3 {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  @media (max-width: 475px) {
+  @media (max-width: $mobileView) {
     font-size: 9vw;
   }
 }
 
 h1 {
   font-size: 5vw;
-  color: #fff;
+  color: #000;
   line-height: 0.8;
 
-  @media (max-width: 475px) {
+  @media (max-width: $mobileView) {
     font-size: 9vw;
   }
 }
 
 p {
-  color: rgba($light-navy, 0.6);
+  color: rgba(#000, 0.6);
   font-size: 1.6vw;
   font-weight: 400;
   font-family: $primaryFont;
   line-height: 1.5;
   margin-top: 1em;
   width: 33em;
-  @media (max-width: 475px) {
+  @media (max-width: $mobileView) {
     font-size: 14px;
     width: 100%;
   }
-  @media (min-width: 475px) and (max-width: 768px) {
+  @media (min-width: $mobileView) and (max-width: $tabletView) {
     font-size: 1.5vw;
   }
 }

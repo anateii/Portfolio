@@ -1,7 +1,52 @@
 @import "../styles/variables.scss";
 
 .container {
-  background: linear-gradient(to right, #b4007e 5%, #540292 30%);
+  background-color: $primary-light;
+  color: #000;
   width: 100%;
-  height: 400px;
+  height: 100vh;
+  padding: 0 15vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #e4e4e4;
+  margin-top: -10em;
+
+  @media (max-width: $tabletView) {
+    padding: 0 5vw;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $mobileView) {
+    margin-top: 5em;
+  }
+
+  &__title {
+    font-size: 3rem;
+    background: linear-gradient(to right, #3290e2 5%, #004dc9 30%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: $mobileView) {
+      font-size: 26px;
+    }
+    @media (min-width: $mobileView) and (max-width: $tabletView) {
+      font-size: 28px;
+    }
+
+    &::before {
+      counter-increment: section 2;
+      content: "0" counter(section) ".";
+      margin-right: 10px;
+      font-weight: 400;
+      font-size: 18px;
+      font-family: $secondaryFont;
+      color: #fff;
+
+      @media (max-width: $mobileView) {
+        font-size: 14px;
+      }
+    }
+  }
 }

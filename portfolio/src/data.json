@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "title": "React Developer ",
+    "job": "Mooney",
+    "link": "",
+    "body": "Provided implementation, deployment and maintenance of the EasyCassa Web application, all-in-one cloud management services in the Sales Retail industry.\nDeveloped new UI features based on Figma Designs and integrated them to the existing React components.\nOptimised and resolved performance issues on pages, charts and complex forms.\nCollaborated in an Agile environment with teams of Developers, UX/UI designers and QA Testers.",
+    "time": "June 2022 - Present"
+  },
+  {
+    "id": 2,
+    "title": "Web Designer ",
+    "job": "Premium Expert",
+    "link": "",
+    "body": "In-house Funnel Builder and Web Designer building Sales Funnels for Italian and International Coaches.\nScaled Sales Funnels to €40K+ of sales in 2 months.\nEnhanced functionality and appearance of website and increased sales by 10%.\nDeveloped site navigation by funneling traffic through content.\nTranslated customer requirements into technical site concepts for bidding and initial planning purposes",
+    "time": "May 2020 - January 2022"
+  },
+  {
+    "id": 3,
+    "title": "Sales Funnels Builder ",
+    "link": "",
+    "body": "Carried out day-to-day duties accurately and efficiently.\nWorked flexible hours across nights, weekends and holidays.\nConducted research, gathered information from multiple sources (from top marketers like Russell Brunson, Gary Vaynerchuk, Tim Ferriss, Neil Patel etc.).\nDeveloped site navigation by funneling traffic through content.",
+    "time": "November 2020 - September 2021"
+  }
+]

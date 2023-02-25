@@ -80,30 +80,30 @@ export const Header = () => {
               <li>
                 {menuOpen && size.width < 768 ? (<HashLink to="/#who" smooth onClick={menuToggleHandler}>
                   <span>01. </span>
-                  WHO
+                  About
                 </HashLink>) : (<HashLink to="/#who" smooth>
                   <span>01. </span>
-                  WHO
+                  About
                 </HashLink>)}
 
               </li>
               <li>
                 {menuOpen && size.width < 768 ? (<HashLink to="/#what" smooth onClick={menuToggleHandler}>
                   <span>02. </span>
-                  WHAT
+                  Experience
                 </HashLink>) : (<HashLink to="/#what" smooth>
                   <span>02. </span>
-                  WHAT
+                  Experience
                 </HashLink>)}
 
               </li>
               <li>
                 {menuOpen && size.width < 768 ? (<HashLink to="/#work" smooth onClick={menuToggleHandler}>
                   <span>03. </span>
-                  WORK
+                  Projects
                 </HashLink>) : (<HashLink to="/#work" smooth>
                   <span>03. </span>
-                  WORK
+                  Projects
                 </HashLink>)}
               </li>
             </ul>

@@ -133,8 +133,8 @@
         border: 1px solid #b4007e;
         border-radius: $borderRadius;
         color: #ffffff;
-        font-size: 0.9rem;
-        font-family: inherit;
+        font-size: 0.8rem;
+        font-family: $secondaryFont;
         transition: 0.5s ease all;
 
         &:hover {

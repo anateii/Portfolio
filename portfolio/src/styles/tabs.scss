@@ -5,6 +5,7 @@
   flex-direction: row;
   margin: 20px;
   column-gap: 3em;
+  margin-top: 3em;
 
   @media (max-width: $tabletView) {
     flex-direction: column;
@@ -16,6 +17,8 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 10px;
+  font-family: $secondaryFont;
+  font-weight: 700;
 
   @media (max-width: $tabletView) {
     flex-direction: row;
@@ -29,9 +32,20 @@
   border-left: none;
   border-right: none;
   cursor: pointer;
+  display: ruby;
 
   &:hover {
-    background-color: #ffffff51;
+    color: #004dc9;
+    animation: 0.3s color ease-in;
+
+    @keyframes color {
+      0% {
+        color: #000;
+      }
+      100% {
+        color: #004dc9;
+      }
+    }
   }
 
   @media (max-width: $mobileView) {
@@ -45,11 +59,14 @@
   border-top: none;
   border-left: none;
   border-right: none;
+
+  @media (min-width: $tabletView) {
+    border-bottom: none;
+    border-left: 2px solid #004dc9;
+  }
 }
 
 .tabs-content {
-  padding: 9px;
-
   @media (min-width: $mobileView) and(max-width: $tabletView) {
     padding: 20px;
   }
@@ -61,8 +78,65 @@
 
 .tab-item {
   display: none;
+
+  & p {
+    margin-top: 0em;
+    font-size: 16px;
+    font-family: $secondaryFont;
+  }
 }
 
 .tab-item.active {
   display: block;
+}
+
+a,
+span:not(:first-of-type) {
+  color: #004dc9;
+  font-family: $secondaryFont;
+  text-decoration: none;
+
+  &:focus {
+    color: #004dc9;
+  }
+}
+
+span:first-of-type {
+  color: #000;
+  font-family: $secondaryFont;
+}
+
+span:nth-of-type(3) {
+  font-weight: 600;
+  color: #004dc9;
+}
+
+ul {
+  font-family: $secondaryFont;
+  list-style: none;
+  padding-left: 0;
+  transform: translateY(1em);
+
+  & .list {
+    &::before {
+      content: "▹";
+      margin-right: 5px;
+      color: #004dc9;
+      line-height: 20px;
+    }
+  }
+}
+
+.iconsWrapper {
+  transform: translateY(2em);
+  display: flex;
+  flex-direction: row;
+
+  & div {
+    flex-direction: column;
+  }
+
+  & div > img {
+    width: 30px;
+  }
 }

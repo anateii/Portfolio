@@ -73,7 +73,16 @@ export const What = () => {
               </h3>
               <p>{element.time}</p>
               <ul>
-                {element.body.split("\n").map((string, index) => (<li key={index}>{string}</li>))}</ul>
+                {element.body.split("\n").map((string, index) => (
+                  <li key={index} className="list">{string}</li>))}
+              </ul>
+              {/* <div className="iconsWrapper">
+                {element.images.map((img, index) => (
+                  <div key={index}>
+                    <img src={`${img.url}`} alt="" /></div>
+                ))
+                }
+              </div> */}
             </div>
           ))}
         </div>

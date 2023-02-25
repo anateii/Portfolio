@@ -9,17 +9,18 @@
     padding: 0 3rem;
   }
   transition: 0.3s ease all;
-  position: sticky;
+  position: fixed;
   top: 0;
   background: transparent;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(8px);
   font-family: $secondaryFont;
   font-size: 15px;
+  z-index: 1000;
 
   & hr {
     transform: translate(-3rem, 3.15rem);
     width: 4rem;
-    color: rgba($light-navy, 0.8);
+    color: #000;
   }
 
   &__content {
@@ -81,6 +82,7 @@
           align-items: center;
           margin-bottom: 0;
           margin-right: calc(0.5rem + #{$spacing-md});
+          margin-top: -1.9em;
         }
         li {
           &:not(:last-child) {
@@ -101,7 +103,7 @@
             justify-content: center;
             line-height: 2;
 
-            @media (max-width: $tabletView) {
+            @media (max-width: $mobileView) {
               display: flex;
               flex-direction: row;
               justify-content: center;
@@ -109,12 +111,16 @@
               color: #fff;
             }
 
-            &:hover {
+            & span:first-of-type {
               color: #b4007e;
             }
+
             & span {
               color: #000;
               font-family: $primaryFont;
+              &:hover {
+                color: #b4007e;
+              }
 
               @media (max-width: $tabletView) {
                 color: #fff;

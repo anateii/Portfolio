@@ -21,9 +21,13 @@
     margin-top: 8em;
   }
 
+  @media (min-width: $mobileView) and (max-width: $tabletView) {
+    margin-top: -10em;
+  }
+
   &__title {
     font-size: 3rem;
-    background: linear-gradient(to right, #3290e2 5%, #004dc9 30%);
+    background: linear-gradient(27deg, #b4007e 5%, #540292 30%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

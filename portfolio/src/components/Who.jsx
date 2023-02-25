@@ -64,7 +64,7 @@ export const Who = () => {
                 into creating <span style={{ fontWeight: '800', color: '#b4007e' }}>sales funnels</span> for Italian Business Coaches.
                 Turns out using tools like Clickfunnels and GoHighLevel taught me a lot about HTML & CSS!
               </p>
-              <p>Fast-forward to today, and I’ve had the privilege of working as a Sales Funnel Designer, Appointment Setter, Copywriter, and finally
+              <p>Fast-forward to today, I’ve had the privilege of working as a Sales Funnel Designer, Appointment Setter, Copywriter, and finally
                 as a FrontEnd Developer.
                 My main focus is building accessible, inclusive products and digital experiences through the combination of the technologies I used for the past year:
               </p>

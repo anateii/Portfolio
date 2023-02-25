@@ -35,7 +35,7 @@
   display: ruby;
 
   &:hover {
-    color: #004dc9;
+    color: #b4007e;
     animation: 0.3s color ease-in;
 
     @keyframes color {
@@ -43,7 +43,7 @@
         color: #000;
       }
       100% {
-        color: #004dc9;
+        color: #b4007e;
       }
     }
   }
@@ -55,14 +55,14 @@
 
 .tab.active {
   background-color: transparent;
-  border-bottom: 2px solid #004dc9;
+  border-bottom: 2px solid #b4007e;
   border-top: none;
   border-left: none;
   border-right: none;
 
   @media (min-width: $tabletView) {
     border-bottom: none;
-    border-left: 2px solid #004dc9;
+    border-left: 2px solid #b4007e;
   }
 }
 
@@ -92,12 +92,12 @@
 
 a,
 span:not(:first-of-type) {
-  color: #004dc9;
+  color: #b4007e;
   font-family: $secondaryFont;
   text-decoration: none;
 
   &:focus {
-    color: #004dc9;
+    color: #b4007e;
   }
 }
 
@@ -108,7 +108,7 @@ span:first-of-type {
 
 span:nth-of-type(3) {
   font-weight: 600;
-  color: #004dc9;
+  color: #b4007e;
 }
 
 ul {
@@ -121,7 +121,7 @@ ul {
     &::before {
       content: "▹";
       margin-right: 5px;
-      color: #004dc9;
+      color: #b4007e;
       line-height: 20px;
     }
   }

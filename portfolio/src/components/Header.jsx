@@ -41,7 +41,7 @@ export const Header = () => {
 
   const headerVariants = {
     visible: { opacity: 1, x: 0, transition: { duration: 1 }, },
-    hidden: { opacity: 0, x: -100 }
+    hidden: { opacity: 0, x: -100, }
   };
 
   const controls = useAnimation();
@@ -58,12 +58,14 @@ export const Header = () => {
 
 
   return (
-    <motion.div ref={ref}
-      animate={controls}
-      variants={headerVariants}
-      initial="hidden" >
-      <header className={classes.header}>
+
+    <header className={classes.header}>
+      <motion.div ref={ref}
+        animate={controls}
+        variants={headerVariants}
+        initial="hidden" >
         <hr />
+
         <div className={classes.header__content}>
 
           <div className={classes.header__content__logo}>
@@ -124,7 +126,8 @@ export const Header = () => {
             )}
           </div>
         </div>
-      </header>
-    </motion.div>
+
+      </motion.div>
+    </header>
   );
 };

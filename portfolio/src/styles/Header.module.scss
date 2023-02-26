@@ -21,6 +21,10 @@
     transform: translate(-3rem, 3.15rem);
     width: 4rem;
     color: #000;
+
+    //  @media (max-width: 600px) {
+    //     transform: translate(-3rem, 2.7rem);
+    //   }
   }
 
   &__content {
@@ -34,6 +38,11 @@
     justify-content: space-between;
     position: relative;
     z-index: 100;
+    top: 1.5em;
+
+    @media (max-width: $tabletView) {
+      top: 2em;
+    }
 
     &__logo {
       width: 12em;

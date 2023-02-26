@@ -118,6 +118,13 @@ ul {
   transform: translateY(1em);
 
   & .list {
+    font-size: 16px;
+    line-height: 1.7;
+
+    @media (max-width: $mobileView) {
+      font-size: 14px;
+    }
+
     &::before {
       content: "▹";
       margin-right: 5px;

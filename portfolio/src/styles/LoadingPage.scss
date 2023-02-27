@@ -9,21 +9,6 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  animation: loading 5s ease-in-out;
-}
-
-@keyframes loading {
-  0% {
-    opacity: 0;
-    -webkit-animation-timing-function: ease-in;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-animation-timing-function: ease-out;
-  }
 }
 
 #container {

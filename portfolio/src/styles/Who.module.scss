@@ -1,7 +1,6 @@
 @import "../styles/variables.scss";
 
 .container {
-  background-color: $primary-light;
   color: #000;
   width: 100%;
   height: 100vh;
@@ -10,7 +9,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   //background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(113, 9, 165) 120%);
-  background: #e4e4e4;
+  background: transparent;
 
   @media (max-width: $tabletView) {
     padding: 0 1.5rem;
@@ -49,6 +48,7 @@
   &__about {
     display: flex;
     column-gap: 2em;
+    margin-top: 2em;
 
     @media (max-width: $tabletView) {
       display: block;

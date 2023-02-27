@@ -37,7 +37,7 @@ h3 {
 
 .name {
   font-size: 5vw;
-  background: linear-gradient(to right, #b4007e 5%, #540292 30%);
+  background: linear-gradient(to right, #b4007e 5%, #1c0292 30%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -57,8 +57,8 @@ h1 {
 }
 
 p {
-  color: rgba(#000, 0.6);
-  font-size: 1.6vw;
+  color: #000;
+  font-size: 1.5vw;
   font-weight: 400;
   font-family: $primaryFont;
   line-height: 1.5;

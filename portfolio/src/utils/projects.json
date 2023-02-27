@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Project 1",
+    "body": "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+    "linkGithub": "https://github.com/anateii/Planets-Beyond-Site/tree/main/planets-beyond-site",
+    "linkLive": "https://planets-beyond.vercel.app/",
+    "skills": "React"
+  },
+  {
+    "id": 2,
+    "title": "Project 2",
+    "body": "This is project two description",
+    "linkGithub": "fif",
+    "linkLive": "flf",
+    "skills": "Redux"
+  }
+]

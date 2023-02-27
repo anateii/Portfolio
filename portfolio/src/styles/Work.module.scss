@@ -1,7 +1,74 @@
 @import "../styles/variables.scss";
 
 .container {
-  background-color: #000;
+  color: #000;
   width: 100%;
-  height: 400px;
+  height: 100%;
+  padding: 0 15vw;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  margin-top: -10em;
+  -webkit-overflow-scrolling: touch;
+
+  @media (max-width: $tabletView) {
+    padding: 0 1.5rem;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $mobileView) {
+    margin-top: 8em;
+    flex-wrap: nowrap;
+  }
+
+  &__title {
+    font-size: 3rem;
+    background: linear-gradient(27deg, #b4007e 5%, #540292 30%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: $mobileView) {
+      font-size: 26px;
+    }
+    @media (min-width: $mobileView) and (max-width: $tabletView) {
+      font-size: 28px;
+    }
+
+    &::before {
+      counter-increment: section 3;
+      content: "0" counter(section) ".";
+      margin-right: 10px;
+      font-weight: 400;
+      font-size: 18px;
+      font-family: $secondaryFont;
+      color: #fff;
+
+      @media (max-width: $mobileView) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.boxWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 60px;
+  margin-top: 2em;
+
+  @media (max-width: $mobileView) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  & div {
+    width: 100%;
+    height: 400px;
+    background-color: #b4007e;
+    padding: 1em 1em;
+    box-shadow: 14px 14px 26px 0px #00000030;
+  }
 }

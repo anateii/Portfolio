@@ -1,7 +1,6 @@
 @import "../styles/variables.scss";
 
 .container {
-  background-color: $primary-light;
   color: #000;
   width: 100%;
   height: 100vh;
@@ -9,8 +8,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background: #e4e4e4;
-  margin-top: -10em;
+  background: transparent;
   -webkit-overflow-scrolling: touch;
 
   @media (max-width: $tabletView) {
@@ -20,10 +18,6 @@
 
   @media (max-width: $mobileView) {
     margin-top: 8em;
-  }
-
-  @media (min-width: $mobileView) and (max-width: $tabletView) {
-    margin-top: -10em;
   }
 
   &__title {

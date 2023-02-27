@@ -14,7 +14,7 @@ export const Home = () => {
         <h1>I create great web experiences.</h1>
         <p>I’m a FrontEnd Developer specialized in building and designing
           exceptional digital experiences with modern JS libraries like ReactJS.</p>
-        <button>LET'S CHAT!</button>
+        <button onClick={() => window.location.href = "mailto:anamateidev@gmail.com"}>LET'S CHAT!</button>
       </div>
     </>
 

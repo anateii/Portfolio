@@ -3,9 +3,8 @@
 .tabs-container {
   display: flex;
   flex-direction: row;
-  margin: 20px;
   column-gap: 3em;
-  margin-top: 3em;
+  margin-top: 2em;
 
   @media (max-width: $tabletView) {
     flex-direction: column;

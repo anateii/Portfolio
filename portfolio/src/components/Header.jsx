@@ -64,7 +64,7 @@ export const Header = () => {
         animate={controls}
         variants={headerVariants}
         initial="hidden" >
-        <hr />
+
 
         <div className={classes.header__content}>
 
@@ -75,7 +75,7 @@ export const Header = () => {
           </div>
 
           <nav
-            className={`${classes.header__content__nav} ${menuOpen && size.width < 1024 ? classes.isMenu : classes.isMenuMobile
+            className={`${classes.header__content__nav} ${menuOpen && size.width < 768 ? classes.isMenu : classes.isMenuMobile
               }`}
           >
             <ul>

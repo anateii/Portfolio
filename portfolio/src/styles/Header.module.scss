@@ -48,10 +48,9 @@
       width: 12em;
       color: #000;
       font-size: 1.4em;
-      padding: 0 3rem;
+      column-gap: 2rem;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
     }
 
     &__nav {
@@ -131,7 +130,7 @@
                 color: #b4007e;
               }
 
-              @media (max-width: $tabletView) {
+              @media (max-width: $mobileView) {
                 color: #fff;
               }
             }

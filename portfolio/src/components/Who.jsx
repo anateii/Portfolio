@@ -84,8 +84,8 @@ export const Who = () => {
             variants={imgVariants}
             initial="hidden"
           >
-            <div className={classes.container__about__imgWrapper}>
-              <div className={classes.firstBox} style={myStyle}></div>
+            <div className={classes.imgWrapper}>
+              <img loading="lazy" src="/assets/myPicture.png" alt="" sizes="(max-width: 800px) 100vw 50vw" />
             </div>
           </motion.div>
 

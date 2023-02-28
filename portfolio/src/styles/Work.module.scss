@@ -9,8 +9,8 @@
   flex-direction: column;
   background: transparent;
   margin-top: -10em;
-  scroll-behavior: auto;
-  overscroll-behavior-block: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: auto;
 
   @media (max-width: $tabletView) {
     padding: 0 1.5rem;

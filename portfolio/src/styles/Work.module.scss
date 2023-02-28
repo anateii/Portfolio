@@ -17,8 +17,8 @@
   }
 
   @media (max-width: $mobileView) {
-    margin-top: 8em;
     flex-wrap: nowrap;
+    margin-top: -22em;
   }
 
   &__title {

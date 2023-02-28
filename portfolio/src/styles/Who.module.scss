@@ -55,16 +55,21 @@
       display: block;
     }
 
-    &__intro p {
-      font-size: 16px;
-      //color: rgba($light-navy, 0.6);
-      color: #000;
-      font-family: $primaryFont;
-      line-height: 1.7;
+    &__intro {
+      @media (max-width: $mobileView) {
+        margin-top: 2em;
+      }
+      & p {
+        font-size: 16px;
+        //color: rgba($light-navy, 0.6);
+        color: #000;
+        font-family: $primaryFont;
+        line-height: 1.7;
 
-      @media (max-width: $tabletView) {
-        font-size: 14px;
-        width: 100%;
+        @media (max-width: $tabletView) {
+          font-size: 14px;
+          width: 100%;
+        }
       }
     }
   }
@@ -140,6 +145,10 @@
 
     &:hover {
       filter: none;
+    }
+
+    @media (max-width: $mobileView) {
+      width: 200px;
     }
   }
 }

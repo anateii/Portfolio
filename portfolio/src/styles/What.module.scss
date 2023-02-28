@@ -14,10 +14,11 @@
   @media (max-width: $tabletView) {
     padding: 0 1.5rem;
     padding-bottom: 0;
+    margin-top: 10em;
   }
 
   @media (max-width: $mobileView) {
-    margin-top: 8em;
+    margin-top: 5em;
   }
 
   &__title {

@@ -9,7 +9,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   background: transparent;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: auto;
 
   @media (max-width: $tabletView) {
     padding: 0 1.5rem;

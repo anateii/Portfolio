@@ -2,9 +2,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect } from 'react'
 import classes from '../styles/Work.module.scss'
-import data from "../utils/projects.json"
-import { FaGithub } from "react-icons/fa"
-import { GoLinkExternal } from "react-icons/go"
+
 
 export const Work = () => {
 

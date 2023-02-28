@@ -33,10 +33,7 @@ export const Who = () => {
     }
   }, [controls, inView]);
 
-  const myStyle = {
-    backgroundImage: 'url(/assets/myPicture.png)',
-    backgroundSize: '300px',
-  }
+
 
   return (
 

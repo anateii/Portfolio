@@ -59,6 +59,7 @@
   grid-column-gap: 30px;
   grid-row-gap: 60px;
   margin-top: 2em;
+  position: relative;
 
   @media (max-width: $mobileView) {
     grid-template-columns: repeat(1, 1fr);
@@ -69,7 +70,53 @@
     width: 100%;
     height: 400px;
     background-color: #b4007e;
-    padding: 1em 1em;
+    padding: 1.6em 1.6em;
     box-shadow: 14px 14px 26px 0px #00000030;
+    border-radius: 6px;
+    position: relative;
+
+    &:hover h6 {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+
+    &:hover h2 {
+      color: #000;
+    }
+
+    & .icon {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+    }
+
+    & h2 {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+    }
+
+    & h6 {
+      font-size: 14px;
+      color: #fff;
+      display: inline-block;
+      position: absolute;
+      top: 60%;
+      left: 5%;
+      font-weight: 400;
+      font-family: $primaryFont;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: 0.3s ease-in-out;
+    }
+
+    & span {
+      color: #fff;
+      display: block;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: 0.3s ease-in-out;
+      position: absolute;
+      top: 80%;
+    }
   }
 }

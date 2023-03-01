@@ -2,6 +2,8 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect } from 'react'
 import classes from '../styles/Work.module.scss'
+import { FaCode } from "react-icons/fa"
+import data from "../utils/projects.json"
 
 
 export const Work = () => {
@@ -14,6 +16,7 @@ export const Work = () => {
   const controls = useAnimation();
 
   const [ref, inView] = useInView();
+
 
 
 
@@ -36,10 +39,19 @@ export const Work = () => {
       </motion.div>
 
       <div className={classes.boxWrapper}>
-        <div>Box 1</div>
-        <div>Box 2</div>
-        <div>Box 3</div>
-        <div>Box 4</div>
+        {
+          data.map((project) => (
+            <div key={project.id}>
+              <FaCode className={classes.icon} />
+              <h2>{project.title}</h2>
+              <h6>{project.body}</h6>
+
+              <span>{project.skills}</span>
+
+            </div>
+
+          ))
+        }
       </div>
     </div>
   )

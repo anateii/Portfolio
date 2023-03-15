@@ -1,0 +1,19 @@
+@import "../styles/variables.scss";
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo {
+  width: 50%;
+  stroke: #b4007e;
+  stroke-width: 0.1;
+  position: relative;
+}

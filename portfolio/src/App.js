@@ -4,7 +4,7 @@ import { Who } from "./components/Who";
 import { What } from "./components/What";
 import { Work } from "./components/Work";
 import { Home } from "./components/Home";
-import { LoadingPage } from "./components/LoadingPage";
+import { Loader } from "./components/Loader";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -12,13 +12,13 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
 
   return (
     <Router>
       {loading ? (
-        <LoadingPage />
+        <Loader />
       ) : (
         <>
           <Header />

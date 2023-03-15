@@ -228,3 +228,14 @@
     transition-timing-function: ease-in;
   }
 }
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #b4007e;
+  background: linear-gradient(to right, #b4007e 0%, #6d2fca 100%);
+  transform-origin: 0%;
+}

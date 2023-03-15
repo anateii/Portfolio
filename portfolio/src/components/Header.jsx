@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import classes from "../styles/Header.module.scss";
 import { HashLink } from "react-router-hash-link"
-import { useAnimation, motion } from "framer-motion";
+import { useAnimation, motion, useScroll } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export const Header = () => {
@@ -36,7 +36,7 @@ export const Header = () => {
     setMenuOpen((p) => !p);
   };
 
-
+  const { scrollYProgress } = useScroll()
 
 
   const headerVariants = {
@@ -128,6 +128,7 @@ export const Header = () => {
         </div>
 
       </motion.div>
+      <motion.div className={classes.progressBar} style={{ scaleX: scrollYProgress }} />
     </header>
   );
 };

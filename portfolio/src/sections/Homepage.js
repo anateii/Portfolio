@@ -5,7 +5,6 @@ import { FaEthereum } from "react-icons/fa";
 import { Button } from "../components/Button";
 
 export const Homepage = () => {
-  const link = (window.location.href = "mailto:anamateidev@gmail.com");
   return (
     <div id="home" className={classes.homeWrapper}>
       <div className={classes.homeWrapper__firstContainer}>
@@ -18,7 +17,12 @@ export const Homepage = () => {
           exceptional digital experiences with modern JS libraries like ReactJS.
         </h4>
         <div>
-          <Button text="LET'S CHAT" link={link} />
+          <Button
+            text="LET'S CHAT"
+            onClick={() =>
+              (window.location.href = "mailto:anamateidev@gmail.com")
+            }
+          />
           <h5>
             PRESS AND DRAG TO ORBIT <FaEthereum className={classes.icon} />
           </h5>

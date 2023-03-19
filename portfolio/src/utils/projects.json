@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "title": "Project 1",
+    "title": "Space Travel App",
     "body": "A Space Travel Application created with React, Sass and Framer Motion.",
     "linkLive": "https://planets-beyond.vercel.app/",
     "skills": "React Sass FramerMotion"
   },
   {
     "id": 2,
-    "title": "Project 2",
-    "body": "This is Sachin Samal, your tech mate!!! I love you all. Lets make this world a better place for all of us. Keep prospering...Keep learning!!!",
+    "title": "HearMe Music App",
+    "body": "Spotify",
     "linkGithub": "fif",
     "linkLive": "flf",
     "skills": "Redux"
   },
   {
     "id": 3,
-    "title": "Project 2",
+    "title": "Portfolio",
     "body": "This is project two description",
     "linkGithub": "fif",
     "linkLive": "flf",
@@ -24,7 +24,7 @@
   },
   {
     "id": 4,
-    "title": "Project 2",
+    "title": "Landing Page",
     "body": "This is project two description",
     "linkGithub": "fif",
     "linkLive": "flf",

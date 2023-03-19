@@ -21,7 +21,11 @@
   }
 
   @media (max-width: $mobileView) {
-    padding: 10em 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0em;
+    padding-bottom: 10em;
+    margin-top: 0em;
   }
 
   @media (min-width: $mobileView) and (max-width: $tabletView) {
@@ -97,4 +101,39 @@ hr {
   color: rgba($light-navy, 0.8);
   transform: translate(84.4vw, -1.5rem);
   width: 7rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: $tabletView) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+
+.spline {
+  position: relative;
+  margin: 0;
+  top: 0;
+  right: 0;
+  width: 1200px;
+  height: 1000px;
+  @media (max-width: 1024px) {
+    transform: scale(0.8);
+    transform-origin: top;
+  }
+  @media (max-width: 800px) {
+    transform: scale(0.7);
+  }
+  @media (max-width: 600px) {
+    transform: scale(0.3);
+    margin: auto;
+  }
+  @media (max-width: $mobileView) {
+    transform: scale(0.3);
+    margin-left: -25em;
+    margin-top: 3em;
+    margin-bottom: -40em;
+  }
 }

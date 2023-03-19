@@ -69,11 +69,18 @@
   & div {
     width: 100%;
     height: 300px;
-    background-color: #b4007e;
+    background-color: #fff;
     padding: 1.6em 1.6em;
-    box-shadow: 14px 14px 26px 0px #00000030;
+    box-shadow: 14px 14px 26px 0px #00000024;
     border-radius: 6px;
     position: relative;
+    transition: all 0.2s ease-in-out;
+    filter: grayscale(1);
+
+    &:hover {
+      transform: scale(1.1);
+      filter: none;
+    }
 
     &:hover h6 {
       transform: translateY(0%);
@@ -81,23 +88,23 @@
     }
 
     &:hover h2 {
-      color: #000;
+      color: #b4007e;
     }
 
     & .icon {
-      color: rgb(255, 255, 255);
+      color: #b4007e;
       font-size: 20px;
     }
 
     & h2 {
-      color: #fff;
+      color: #b4007e;
       position: absolute;
       top: 50%;
     }
 
     & h6 {
       font-size: 14px;
-      color: #fff;
+      color: #b4007e;
       display: inline-block;
       position: absolute;
       top: 60%;
@@ -107,6 +114,10 @@
       opacity: 0;
       transform: translateY(100%);
       transition: 0.3s ease-in-out;
+
+      @media (max-width: $tabletView) {
+        left: 7.3%;
+      }
     }
 
     & span {

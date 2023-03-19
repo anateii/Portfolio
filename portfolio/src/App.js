@@ -3,9 +3,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Who } from "./components/Who";
 import { What } from "./components/What";
 import { Work } from "./components/Work";
-import { Home } from "./components/Home";
 import { Homepage } from "./sections/Homepage";
-import { About } from "./sections/About";
+import { Skills } from "./sections/Skills";
 import { Loader } from "./components/Loader";
 import { useEffect, useState } from "react";
 
@@ -21,7 +20,7 @@ function App() {
     <Router>
       <Header />
       <Homepage />
-      <About />
+      <Skills />
     </Router>
   );
 }

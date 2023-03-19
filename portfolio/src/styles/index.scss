@@ -11,32 +11,18 @@ body {
   color: $light-navy;
   height: 100vh;
   overflow-x: hidden;
-  background: #fff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
+  background-image: radial-gradient(
+    circle,
     #ffffff,
-    #e9e9e9
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffffff 0%,
-    #f4f4f4 100%
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #f6f6f6,
+    #ededed,
+    #e4e4e4,
+    #dbdbdb
+  );
 }
 
 #root {
   height: 100vh;
-}
-
-.background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  color: #340075;
-  overflow: hidden;
-  z-index: -1;
 }
 
 .commonButton {

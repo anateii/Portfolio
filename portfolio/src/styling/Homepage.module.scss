@@ -71,7 +71,7 @@
 
 .spline {
   @include mobile {
-    transform: scale(0.5) translateY(150px);
+    transform: scale(0.5) translateY(200px);
   }
   @include tabletPortraitUp {
     transform: scale(0.7);

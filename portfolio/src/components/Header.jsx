@@ -6,6 +6,7 @@ import classes from "../styles/Header.module.scss";
 import { HashLink } from "react-router-hash-link"
 import { useAnimation, motion, useScroll } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Button } from "./Button";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -115,7 +116,7 @@ export const Header = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button>RESUME</button>
+              <Button text="RESUME" />
             </a>
           </nav>
           <div className={classes.header__content__toggle}>

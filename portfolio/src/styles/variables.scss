@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
 //Colors
 
 //$primary-light: #00ffde;
@@ -15,11 +15,11 @@ $light-navy: #e1e9ff;
 //Header
 
 $headerHeight: 100px;
-$borderRadius: 6px;
+$borderRadius: 12px;
 
 //Fonts
 
-$primaryFont: "Roboto", sans-serif;
+$primaryFont: "Spline Sans", sans-serif;
 $secondaryFont: "Source Sans 3", sans-serif;
 
 //spacing
@@ -41,3 +41,29 @@ $spacing-lg: 32px;
 
 $mobileView: 476px;
 $tabletView: 810px;
+
+@mixin mobile {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tabletPortraitUp {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin tabletLandscapeUp {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin laptopUp {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin desktopUp {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

@@ -1,0 +1,85 @@
+@import "./src/styles/variables.scss";
+
+.homeWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 6rem;
+  font-family: $primaryFont;
+  background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #f6f6f6,
+    #ededed,
+    #e4e4e4,
+    #dbdbdb
+  );
+
+  @include mobile {
+    flex-direction: column-reverse;
+    padding: 1.5rem;
+  }
+
+  &__firstContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+
+    & h4,
+    h3,
+    h6,
+    h5 {
+      color: #000;
+      width: 60%;
+
+      @include mobile {
+        width: 100%;
+        font-weight: 400;
+      }
+    }
+
+    & h5 {
+      font-weight: 400;
+      transform: translateY(-4px);
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    & div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 2em;
+    }
+  }
+
+  &__secondContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.spline {
+  @include mobile {
+    transform: scale(0.3);
+  }
+  @include tabletPortraitUp {
+    transform: scale(0.7);
+  }
+}
+
+.icon {
+  font-size: 20px;
+  transform: translateY(3px);
+  color: #3500ff;
+}

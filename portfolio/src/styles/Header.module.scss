@@ -6,7 +6,7 @@
   padding: 0 1.5rem;
 
   @include breakpoint(md) {
-    padding: 0 3rem;
+    padding: 0 6rem;
   }
   transition: 0.3s ease all;
   position: fixed;
@@ -42,6 +42,7 @@
 
     @media (max-width: $tabletView) {
       top: 2em;
+      justify-content: space-between;
     }
 
     &__logo {
@@ -120,14 +121,14 @@
             }
 
             & span:first-of-type {
-              color: #b4007e;
+              color: #3500ff;
             }
 
             & span {
               color: #000;
               font-family: $primaryFont;
               &:hover {
-                color: #b4007e;
+                color: #3500ff;
               }
 
               @media (max-width: $mobileView) {
@@ -138,27 +139,6 @@
           }
         }
       }
-      button {
-        cursor: pointer;
-        outline: none;
-        padding: 0.75rem 1.25rem;
-        font-family: $primaryFont;
-        margin: 0;
-        background-color: #b4007e;
-        border: 1px solid #b4007e;
-        border-radius: $borderRadius;
-        color: #ffffff;
-        font-size: 0.8rem;
-        font-family: $secondaryFont;
-        transition: 0.5s ease all;
-
-        &:hover {
-          background-color: #004dc9;
-          border-color: #004dc9;
-          color: #fff;
-        }
-      }
-
       &.isMenu {
         transform: translate(100%);
       }
@@ -174,10 +154,10 @@
       font-size: 2rem;
       transition: 0.3s ease all;
       position: relative;
-      color: #b4007e;
+      color: #3500ff;
 
       &:hover {
-        color: #004dc9;
+        color: #2e00e6;
       }
 
       @include breakpoint(md) {
@@ -189,7 +169,7 @@
 
 .logo1 {
   &:hover {
-    color: #b4007e;
+    color: #3500ff;
     cursor: pointer;
     transform: translateY(5px);
     -webkit-transition-duration: 0.3s;
@@ -203,7 +183,7 @@
 
 .logo2 {
   &:hover {
-    color: #962fca;
+    color: #3500ff;
     cursor: pointer;
     transform: translateY(5px);
     -webkit-transition-duration: 0.3s;
@@ -217,7 +197,7 @@
 
 .logo3 {
   &:hover {
-    color: #6d2fca;
+    color: #3500ff;
     cursor: pointer;
     transform: translateY(5px);
     -webkit-transition-duration: 0.3s;
@@ -235,7 +215,6 @@
   left: 0;
   right: 0;
   height: 5px;
-  background: #b4007e;
-  background: linear-gradient(to right, #b4007e 0%, #6d2fca 100%);
+  background: #3500ff;
   transform-origin: 0%;
 }

@@ -21,11 +21,7 @@
   }
 
   @media (max-width: $mobileView) {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    padding-top: 0em;
-    padding-bottom: 10em;
-    margin-top: 0em;
+    padding: 10em 1.5em;
   }
 
   @media (min-width: $mobileView) and (max-width: $tabletView) {
@@ -74,26 +70,6 @@ p {
   }
   @media (min-width: $mobileView) and (max-width: $tabletView) {
     font-size: 1.5vw;
-  }
-}
-
-button {
-  width: 130px;
-  height: 50px;
-  background-color: #b4007e;
-  border: 1px solid #b4007e;
-  border-radius: $borderRadius;
-  color: #ffffff;
-  margin-top: 2em;
-  transition: 0.5s ease all;
-  font-size: 0.8rem;
-  font-family: $secondaryFont;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #004dc9;
-    border-color: #004dc9;
-    color: #fff;
   }
 }
 

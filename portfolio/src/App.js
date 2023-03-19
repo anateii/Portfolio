@@ -4,6 +4,8 @@ import { Who } from "./components/Who";
 import { What } from "./components/What";
 import { Work } from "./components/Work";
 import { Home } from "./components/Home";
+import { Homepage } from "./sections/Homepage";
+import { About } from "./sections/About";
 import { Loader } from "./components/Loader";
 import { useEffect, useState } from "react";
 
@@ -17,17 +19,9 @@ function App() {
 
   return (
     <Router>
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
-          <Header />
-          <Home />
-          <Who />
-          <What />
-          <Work />
-        </>
-      )}
+      <Header />
+      <Homepage />
+      <About />
     </Router>
   );
 }

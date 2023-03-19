@@ -18,7 +18,7 @@ export const Home = () => {
             exceptional digital experiences with modern JS libraries like ReactJS.</p>
           <button onClick={() => window.location.href = "mailto:anamateidev@gmail.com"}>LET'S CHAT!</button>
         </div>
-        <VideoBackground className={classes.video} />
+        <VideoBackground />
       </div>
     </>
 

@@ -1,15 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import classes from "../styling/Homepage.module.scss";
 import VideoBackground from "../spline/VideoBackground";
-import { FaEthereum } from "react-icons/fa";
 import { Button } from "../components/Button";
+import { FaEthereum } from "react-icons/fa";
 
 export const Homepage = () => {
-  const handleClick = (e) => {
-    window.open("mailtto:anamateidev@gmail.com");
-    e.preventDefault();
-  };
-
   return (
     <div id="home" className={classes.homeWrapper}>
       <div className={classes.homeWrapper__firstContainer}>
@@ -22,7 +17,7 @@ export const Homepage = () => {
           exceptional digital experiences with modern JS libraries like ReactJS.
         </h4>
         <div>
-          <Button text="LET'S CHAT" onClick={handleClick} />
+          <Button text="LET'S CHAT" />
 
           <h5>
             PRESS AND DRAG TO ORBIT <FaEthereum className={classes.icon} />

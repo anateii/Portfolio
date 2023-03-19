@@ -35,10 +35,11 @@ body {
   border: 1px solid #3500ff;
   border-radius: $borderRadius;
   color: #ffffff;
-  font-size: 0.8rem;
-  transition: 0.5s ease all;
+  font-size: 14px;
+  transition: 1s ease all;
 
   &:hover {
-    background-color: #2d00e1;
+    background-color: #8800ff;
+    border-color: transparent;
   }
 }

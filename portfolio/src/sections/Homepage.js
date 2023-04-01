@@ -17,7 +17,7 @@ export const Homepage = () => {
           exceptional digital experiences with modern JS libraries like ReactJS.
         </h4>
         <div>
-          <Button text="LET'S CHAT" />
+          <Button>LET'S CHAT!</Button>
 
           <h5>
             PRESS AND DRAG TO ORBIT <FaEthereum className={classes.icon} />

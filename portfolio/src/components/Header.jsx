@@ -89,8 +89,8 @@ export const Header = () => {
 
           <nav
             className={`${classes.header__content__nav} ${menuOpen && size.width < 768
-                ? classes.isMenu
-                : classes.isMenuMobile
+              ? classes.isMenu
+              : classes.isMenuMobile
               }`}
           >
             <ul>
@@ -134,7 +134,7 @@ export const Header = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Button text="RESUME" />
+              <Button>RESUME</Button>
             </a>
           </nav>
           <div className={classes.header__content__toggle}>

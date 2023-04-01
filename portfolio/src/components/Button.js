@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/index.scss";
 
-export const Button = ({ text, handleClick }) => {
+export const Button = ({ children, ...rest }) => {
   return (
-    <button className="commonButton" onClick={handleClick}>
-      {text}
+    <button className="commonButton" {...rest}>
+      {children}
     </button>
   );
 };

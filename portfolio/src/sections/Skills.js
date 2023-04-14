@@ -16,14 +16,16 @@ export const Skills = () => {
   ];
 
   return (
-    <div className={classes.slider}>
-      <ul>
-        {skills.map((skill) => (
-          <li key={skill.id}>
-            <div className={classes.icon}>{skill.logo}</div>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className={classes.skillsWrapper}>
+        <div className={classes.skillsWrapper__skills}>
+          {skills.map((skill) => (
+            <div key={skill.id}>
+              <div className={classes.icon}>{skill.logo}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };

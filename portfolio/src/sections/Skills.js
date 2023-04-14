@@ -13,24 +13,17 @@ export const Skills = () => {
     { logo: <SiJavascript />, id: 6 },
     { logo: <FaFigma />, id: 7 },
     { logo: <SiFramer />, id: 8 },
-    <SiRedux />,
-    <SiNextdotjs />,
-    <FaHtml5 />,
-    <FaCss3Alt />,
-    <SiJavascript />,
-    <FaFigma />,
-    <SiFramer />,
   ];
 
   return (
-    <div className={classes.skillsWrapper}>
-      <div className={classes.skillsWrapper__skills}>
+    <div className={classes.slider}>
+      <ul>
         {skills.map((skill) => (
-          <div key={skill.id}>
+          <li key={skill.id}>
             <div className={classes.icon}>{skill.logo}</div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

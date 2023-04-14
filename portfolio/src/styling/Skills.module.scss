@@ -13,7 +13,8 @@
   }
 
   &__skills {
-    width: 100%;
+    width: 2179px;
+    overflow: visible;
     height: 150px;
     margin: auto;
 
@@ -25,6 +26,17 @@
 
     & div {
       display: grid;
+      padding: 0;
+      animation: cambio 80s infinite linear;
+    }
+
+    @keyframes cambio {
+      from {
+        margin-left: 0%;
+      }
+      to {
+        margin-left: -100%;
+      }
     }
   }
 }
@@ -41,5 +53,33 @@
     transform: scale(1.1);
     fill: url(#my-cool-gradient);
     color: #3500ff;
+  }
+}
+
+.slider {
+  width: 100vw;
+  margin: auto;
+  overflow: hidden;
+
+  & ul {
+    display: flex;
+    padding: 0;
+    animation: cambio 20s infinite linear;
+
+    @keyframes cambio {
+      100% {
+        transform: translateX(-66.6666%);
+      }
+    }
+
+    & li {
+      padding: 0 4em;
+      list-style: none;
+    }
+
+    & div {
+      max-width: fit-content !important;
+      height: auto !important;
+    }
   }
 }

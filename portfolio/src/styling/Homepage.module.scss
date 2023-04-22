@@ -43,10 +43,10 @@
     & h1 {
       font-weight: 800;
       color: #000;
-      font-size: 4vw;
+      font-size: 64px;
     }
     & h4 {
-      font-weight: 400;
+      font-weight: 500;
     }
     & h5 {
       font-weight: 600;
@@ -93,4 +93,36 @@
   font-size: 20px;
   transform: translateY(3px);
   color: #3500ff;
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+  color: white;
+
+  & :hover {
+    cursor: pointer;
+  }
+
+  & div {
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    padding: 1em 1em;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+
+    & h4 {
+      color: black;
+    }
+  }
+
+  & div:nth-child(1) {
+    flex-direction: row-reverse;
+  }
 }

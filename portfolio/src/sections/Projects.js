@@ -9,6 +9,7 @@ export const Projects = () => {
       id: 1,
       name: "Space Travel Application",
       live: "https://planets-beyond.vercel.app/",
+      code: "https://github.com/anateii/Planets-Beyond-Site",
       pic: picture,
     },
     { id: 2, name: "Music App" },
@@ -32,7 +33,7 @@ export const Projects = () => {
                 <FaExternalLinkAlt style={{ fontSize: "16px" }} />
               </a>
 
-              <a href={project.live} rel="noreferrer" target="_blank">
+              <a href={project.code} rel="noreferrer" target="_blank">
                 <FaCode />
               </a>
             </div>

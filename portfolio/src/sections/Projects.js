@@ -14,7 +14,7 @@ export const Projects = () => {
     },
     { id: 2, name: "Music App" },
     { id: 3, name: "Admin App" },
-    { id: 4, name: "Landing Page" },
+    // { id: 4, name: "Landing Page" },
   ];
 
   return (

@@ -14,13 +14,13 @@
 .projectsWrapper {
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  gap: 2em;
   padding: 2rem 6rem;
   flex-wrap: wrap;
 
   @include mobile {
-    padding: 0 1rem;
-    row-gap: 1em;
+    padding: 2rem 1rem;
+    row-gap: 2em;
   }
 }
 

@@ -14,11 +14,11 @@ export const Projects = () => {
     },
     { id: 2, name: "Music App" },
     { id: 3, name: "Admin App" },
-    { id: 3, name: "Landing Page" },
+    { id: 4, name: "Landing Page" },
   ];
 
   return (
-    <>
+    <div style={{ marginTop: "6em" }}>
       <h1 className={classes.title}>Projects</h1>\
       <div className={classes.projectsWrapper}>
         {projects.map((project) => (
@@ -40,6 +40,6 @@ export const Projects = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };

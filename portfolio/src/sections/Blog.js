@@ -2,6 +2,7 @@ import React from "react";
 import classes from "../styling/Blog.module.scss";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import picture from "../assets/javascript.png";
+import pic from "../assets/Banner.png";
 
 export const Blog = () => {
   const blogs = [
@@ -11,7 +12,12 @@ export const Blog = () => {
       live: "https://medium.com/@anamateidev/essential-javascript-concepts-for-learning-react-8c0dcf508953",
       pic: picture,
     },
-    { id: 2, name: "React Learning Guide" },
+    {
+      id: 2,
+      name: "React Learning Guide",
+      live: "https://www.notion.so/ReactJS-Learning-Guide-cf49ddedb3d9462dad890bb33acc34d6?pvs=4",
+      pic: pic,
+    },
   ];
 
   return (
@@ -23,7 +29,6 @@ export const Blog = () => {
             <div className={classes.blogColumn__blogAvatar}>
               <img src={blog.pic} alt="" />
             </div>
-
             <h3>{blog.name}</h3>
             <div className={classes.blogColumn__logos}>
               <a href={blog.live} rel="noreferrer" target="_blank">
